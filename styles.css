@@ -13,17 +13,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    background-image: linear-gradient(169deg, #22313F 60%, #ffffff calc(60% + 2px));
+    background-image: linear-gradient(173deg, #22313F 58%, #ffffff calc(58% + 1px));
+    display: flex;
+    justify-content: center;
+    height: 33%;
+    max-height: 35%;
+    flex: 1;
 }
-header > div {
+
+.headerContent {
     margin: 25px;
     display: flex;
     justify-content: center;
     color: white;
+    width: 80%;
 }
+
 .profilePic {
-    width: 20%;
+    width: 25%;
+    height: auto;
 }
+
 .aboutMeContainer {
     width: 40%;
     align-self: center;
@@ -32,13 +42,19 @@ header > div {
     padding: 15px;
     box-shadow: 1px 3px 12px black;
 }
-.aboutMeContainer > .socialLinks {
+.aboutMeContainer > .socials {
     display: flex;
     justify-content: end;
 }
-main {
+.myProjects {
+    max-width: 80%;
+    margin-bottom: 35px;
+    margin-top: 35px;
     flex: 1;
-    width: 80%;
+}
+
+.myProjects > h2 {
+    padding-left: 16px;
 }
 
 .projectCards {
@@ -46,9 +62,10 @@ main {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .projectCards > div {
-    width: 250px;
+    max-width: 30%;
     margin: 10px;
     box-shadow: 1px 1px 12px gray;
 }
@@ -56,18 +73,58 @@ main {
     width: 100%;
 }
 .projectInfo {
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectLinks {
+    width: 20px;
+}
+.projectLinks:hover, .socialLinks:hover {
+    transform: scale(1.1);
+}
+.projectLinks:active, .socialLinks:active {
+    transform: scale(0.9);
 }
 img {
     width: 28px;
 }
 
+.footerInfo {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.footerInfo > img {
+    max-width: 15%;
+    width: auto;
+}
+
 .contactInfo {
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
 footer {
     color: white;
     width: 100%;
+    height: 33%;
     background-color: #22313F;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.emailInfo, .phoneNum {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
