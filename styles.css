@@ -16,9 +16,8 @@ header {
     background-image: linear-gradient(173deg, #22313F 58%, #ffffff calc(58% + 1px));
     display: flex;
     justify-content: center;
-    /* height: 33%; */
-    max-height: 35%;
-    flex: 1;
+    height: 33%;
+    /* max-height: 35%; */
 }
 
 .headerContent {
@@ -114,7 +113,6 @@ img {
 footer {
     color: white;
     width: 100%;
-    /* height: 33%; */
     background-color: #22313F;
     display: flex;
     justify-content: center;
@@ -136,19 +134,30 @@ footer {
     }
     header {
         height: fit-content;
+        background-image: linear-gradient(160deg, #22313F 25%, #ffffff calc(25% + 1px));
     }
     .headerContent {
         flex-direction: column;
         width: 350px;
+
     }
     .profilePic {
         width: 350px;
+        margin-bottom: 15px;
+        box-shadow: 1px 2px 10px black;
     }
     .aboutMeContainer {
         box-shadow: none;
         width: 350px;
         font-size: 32px;
         text-align: center;
+    }
+    .aboutMeContainer > .socials {
+        justify-content: center;
+        gap: 25px;
+    }
+    .aboutMeContainer > .socials > a > img {
+        width: 60px;
     }
     .myProjects {
         display: flex;
