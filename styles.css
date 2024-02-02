@@ -38,7 +38,7 @@ header {
 
 .profilePic {
     width: 15%;
-    max-width: 15%;
+
     height: auto;
     z-index: 1;
 }
@@ -207,6 +207,7 @@ footer {
         width: 60px;
     }
     .footerImg {
+        width: 100%;
         max-width: 100%;
     }
     .phoneNum {
