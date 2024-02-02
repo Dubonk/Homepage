@@ -199,4 +199,10 @@ footer {
     .footerImg {
         max-width: 100%;
     }
+    .phoneNum {
+        gap: 8px;
+    }
+    .emailInfo {
+        gap: 8px;
+    }
 }
