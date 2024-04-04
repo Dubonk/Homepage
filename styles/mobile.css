@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+    body {
+        justify-content: space-between;
+    }
+    header {
+        width: 100%;
+        height: fit-content;
+        background-image: linear-gradient(160deg, #22313F 25%, #ffffff calc(25% + 1px));
+    }
+    .headerContent {
+        flex-direction: column;
+        width: 350px;
+
+    }
+    .profilePic {
+        width: 350px;
+        margin-bottom: 15px;
+        box-shadow: 1px 2px 10px black;
+    }
+    .aboutMeContainer {
+        box-shadow: none;
+        width: 350px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .aboutMeContainer > .socials {
+        justify-content: center;
+        gap: 25px;
+    }
+    .aboutMeContainer > .socials > a > img {
+        width: 60px;
+    }
+    .myProjects {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myProjects > h2 {
+        font-size: 32px;
+    }
+    .projectCards {
+        flex-direction: column;
+        width: 100%;
+    }
+    .projectCards > div {
+        max-width: 80%;
+        margin: 10px;
+        box-shadow: 1px 1px 12px gray;
+    }
+    footer {
+        padding-bottom: 0;
+    }
+    .footerInfo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactInfo {
+        width: 90%;
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+        justify-content: center;
+    }
+    .contactInfo > .socials > a > img {
+        width: 60px;
+    }
+    .footerImg {
+        width: 100%;
+        max-width: 100%;
+    }
+    .phoneNum {
+        gap: 8px;
+    }
+    .emailInfo {
+        gap: 8px;
+    }
+}
