@@ -13,10 +13,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    background-image: linear-gradient(173deg, #22313F 58%, #ffffff calc(58% + 1px));
+    background-image: linear-gradient(173deg, #22313F 55%, #ffffff calc(55% + 1px));
     display: flex;
     justify-content: center;
     height: 33%;
+    width: 100%;
     /* max-height: 35%; */
 }
 
@@ -29,7 +30,7 @@ header {
 }
 
 .profilePic {
-    width: 25%;
+    width: 15%;
     height: auto;
     z-index: 1;
 }
@@ -109,6 +110,7 @@ img {
     width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 footer {
     color: white;
@@ -126,6 +128,18 @@ footer {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1540px) {
+    .profilePic {
+        width: 25%;
+    }
+    .footerInfo {
+        width: 100%;
+    }
+    .footerImg {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
