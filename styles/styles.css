@@ -69,9 +69,12 @@ header {
     max-width: 30%;
     margin: 10px;
     box-shadow: 1px 1px 12px gray;
+    border-radius: 12px;
 }
 .projectImg {
     width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 .projectInfo {
     padding-left: 10px;
@@ -154,7 +157,6 @@ footer {
     .headerContent {
         flex-direction: column;
         width: 350px;
-
     }
     .profilePic {
         width: 350px;
