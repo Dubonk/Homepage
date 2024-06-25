@@ -133,6 +133,11 @@ footer {
     margin-bottom: 10px;
 }
 
+#emailLink, #phoneLink {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1540px) {
     .profilePic {
         width: 25%;
