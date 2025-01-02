@@ -30,9 +30,11 @@ header {
 }
 
 .profilePic {
+    border-radius: 12px;
     width: 15%;
     height: auto;
     z-index: 1;
+    box-shadow: 0 0 10px 1px black;
 }
 
 .aboutMeContainer {
@@ -42,6 +44,8 @@ header {
     color: black;
     padding: 15px;
     box-shadow: 1px 1px 12px black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .aboutMeContainer > .socials {
     display: flex;
@@ -107,6 +111,7 @@ img {
 .footerImg {
     max-width: 15%;
     width: auto;
+    border-radius: 12px;
 }
 
 .contactInfo {
@@ -131,11 +136,16 @@ footer {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    gap: 5px;
 }
 
 #emailLink, #phoneLink {
     color: white;
     text-decoration: none;
+}
+.socials {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1540px) {
